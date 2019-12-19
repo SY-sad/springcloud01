@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="commom-vo" />
+        <module name="config-server" />
+        <module name="demo" />
+        <module name="eureka-consumer01" />
+        <module name="eureka-consumer02" />
+        <module name="eureka-provider" />
+        <module name="eureka-server" />
+        <module name="gaetway" />
+        <module name="springcloud01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="commom-vo" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="eureka-consumer01" target="1.8" />
+      <module name="eureka-consumer02" target="1.8" />
+      <module name="eureka-provider" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="gaetway" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="springcloud01" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

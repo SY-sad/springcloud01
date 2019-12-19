@@ -1,0 +1,20 @@
+server:
+  port: 7401
+
+spring:
+  application:
+    name: gateway
+zuul:
+  routes:
+    api-aaa:
+      path: /mv/**
+      url: https://mvnrepository.com/
+    api-cons:
+     path: /cons/**
+     serviceId: eureka-consumer02
+
+eureka:
+  client:
+
+    serviceUrl:
+      defaultZone: http://peer1:7101/eureka/,http://peer2:7102/eureka/,http://peer3:7103/eureka/

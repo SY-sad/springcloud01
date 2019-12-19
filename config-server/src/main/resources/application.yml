@@ -1,0 +1,28 @@
+
+# \u7AEF\u53E3\u53F7
+server:
+  port: 7501
+# \u670D\u52A1\u540D\u79F0
+spring:
+  application:
+    name: config-server
+  profiles:
+    ## \u914D\u7F6E\u672C\u5730\u914D\u7F6E\u6587\u4EF6\u5FC5\u987B\u6FC0\u6D3B\u5185\u7F6E\u7684native,\u5982\u82E5\u8FD8\u9700\u6FC0\u6D3B\u5176\u4ED6\u7684\u5C31\u914D\u7F6E\u591A\u4E2A\uFF0C\u5982\uFF1Anative,dev/qas/prd
+    active: native
+#    active: native,prd
+  cloud:
+    config:
+      server:
+        native:
+          # \u914D\u7F6E\u6587\u4EF6\u5B58\u653E\u8DEF\u5F84\uFF0C\u591A\u4E2A\u8DEF\u5F84\u4E4B\u95F4\u53EF\u4EE5\u7528\u9017\u53F7\u5206\u9694
+#          search-locations: classpath:/cnf
+          search-locations: classpath:/cnf,classpath:/cnf/datasource,classpath:/cnf/redis
+
+
+# \u5411\u6CE8\u518C\u4E2D\u5FC3\u6CE8\u518C
+# \u670D\u52A1\u6CE8\u518C\u4E0E\u53D1\u73B0\u76F8\u5173\u914D\u7F6E
+eureka:
+  client:
+    # \u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
+    serviceUrl:
+      defaultZone: http://peer1:7101/eureka/,http://peer2:7102/eureka/,http://peer3:7103/eureka/

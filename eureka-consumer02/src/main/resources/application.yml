@@ -1,0 +1,42 @@
+# 端口号
+server:
+  port: 7302
+# 服务名称
+spring:
+  profiles: consumer02-1
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: eureka-consumer02
+# 服务注册与发现相关配置
+eureka:
+  client:
+    # 注册中心地址
+    serviceUrl:
+      defaultZone: http://peer1:7101/eureka/,http://peer2:7102/eureka/,http://peer3:7103/eureka/
+#      启用自断器
+feign:
+  hystrix:
+    enabled: true
+
+---
+# 端口号
+server:
+  port: 7303
+# 服务名称
+spring:
+  profiles: consumer02-2
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: eureka-consumer02
+# 服务注册与发现相关配置
+eureka:
+  client:
+    # 注册中心地址
+    serviceUrl:
+      defaultZone: http://peer1:7101/eureka/,http://peer2:7102/eureka/,http://peer3:7103/eureka/
+      #      启用自断器
+feign:
+  hystrix:
+    enabled: true

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commom-vo/commom-vo.iml" filepath="$PROJECT_DIR$/commom-vo/commom-vo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer01/eureka-consumer01.iml" filepath="$PROJECT_DIR$/eureka-consumer01/eureka-consumer01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer02/eureka-consumer02.iml" filepath="$PROJECT_DIR$/eureka-consumer02/eureka-consumer02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-provider/eureka-provider.iml" filepath="$PROJECT_DIR$/eureka-provider/eureka-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gaetway/gaetway.iml" filepath="$PROJECT_DIR$/gaetway/gaetway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01.iml" filepath="$PROJECT_DIR$/springcloud01.iml" />
+    </modules>
+  </component>
+</project>

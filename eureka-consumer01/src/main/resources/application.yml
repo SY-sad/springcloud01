@@ -1,0 +1,14 @@
+
+# �˿ں�
+server:
+  port: 7301
+# ��������
+spring:
+  application:
+    name: eureka-consumer01
+# ����ע���뷢���������
+eureka:
+  client:
+    # ע�����ĵ�ַ
+    serviceUrl:
+      defaultZone: http://localhost:7101/eureka/

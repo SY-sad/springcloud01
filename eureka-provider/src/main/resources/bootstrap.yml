@@ -1,0 +1,15 @@
+# 服务注册与发现相关配置
+eureka:
+  client:
+    # 注册中心地址
+    serviceUrl:
+      defaultZone: http://peer1:7101/eureka/,http://peer2:7102/eureka/,http://peer3:7103/eureka/
+
+spring:
+  cloud:
+    config:
+      discovery:
+       enabled: true     #true是从配置中心读取文件
+       service-id: config-server    #指定配置中心的service-id
+      name: hello,ds,redis                 #对应“文件名-环境名.yml”的{文件名}部分，多个之间用逗号分隔
+      profile: dev                         #对应“文件名-环境名.yml”的{环境名}部分
